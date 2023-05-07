@@ -7,7 +7,7 @@ def load_data():
     df = pd.read_csv(file)
     return df
     
-file = "../Shakespeare_data.csv"
+file = "Shakespeare_data.csv"
 df = load_data()
 create_data = {"Dataline": "number",
                 "Play": "multiselect",
