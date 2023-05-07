@@ -4,7 +4,7 @@ import streamlit as st
 import spacy_streamlit
 import spacy
 
-nlp = spacy.load('en_core_web_sm')
+models = ["en_core_web_sm", "en_core_web_md"]
 
 def main():
 	"""A Simple NLP app with Spacy-Streamlit"""
