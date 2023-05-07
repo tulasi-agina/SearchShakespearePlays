@@ -17,7 +17,7 @@ if choice == "Home":
 	st.subheader("Tokenization")
 	raw_text = st.text_area("Your Text","Enter Text Here")
 	if st.button("Tokenize"):
-		spacy_streamlit.visualize(raw_text)
+		spacy_streamlit.visualize(models, raw_text)
 
 	elif choice == "NER":
 		st.subheader("Named Entity Recognition")
