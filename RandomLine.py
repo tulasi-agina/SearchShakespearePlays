@@ -5,6 +5,6 @@ import pandas as pd
 st.write("Hello")
 
 file = "Shakespeare_data.csv"
-df = pd.load_data(file)
+df = pd.read_csv(file)
 
 st.write(df.iat[4, 2])
