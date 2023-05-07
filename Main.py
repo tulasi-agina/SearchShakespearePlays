@@ -13,7 +13,7 @@ create_data = {"Dataline": "number",
                 "Play": "multiselect",
                 "PlayerLinenumber": "number",
                 "ActSceneLine": "text",
-                "Player": "text",
+                "Player": "multiselect",
                 "PlayerLine": "text"}
 
 all_widgets = sp.create_widgets(df, create_data, ignore_columns=["Dataline"])
