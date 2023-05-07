@@ -4,17 +4,12 @@ import streamlit as st
 import spacy_streamlit
 import spacy
 
-import os
-from PIL import Image
-
 nlp = spacy.lead('en')
 
 def main():
 	"""A Simple NLP app with Spacy-Streamlit"""
 
-	st.title("Spacy-Streamlit NLP App")
-        our_image = Image.open(os.path.join('SpaCy_logo.svg.png'))
-	st.image(our_image)
+	st.title("Named Entity Recognition")
 
 	menu = ["Home","NER"]
 	choice = st.sidebar.selectbox("Menu",menu)
