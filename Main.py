@@ -12,7 +12,7 @@ df = load_data()
 create_data = {"Dataline": "number",
                 "Play": "multiselect",
                 "PlayerLinenumber": "number",
-                "ActSceneLine": "text",
+                "ActSceneLine": "multiselect",
                 "Player": "multiselect",
                 "PlayerLine": "text"}
 
