@@ -3,4 +3,3 @@ pandas
 streamlit_pandas
 spacy
 spacy-streamlit
-pil
