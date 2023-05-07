@@ -18,7 +18,7 @@ create_data = {"Dataline": "number",
 
 all_widgets = sp.create_widgets(df, create_data, ignore_columns=["Dataline"])
 res = sp.filter_df(df, all_widgets)
-st.title("Streamlit AutoPandas")
+st.title("Search Shakespeare")
 st.header("Original DataFrame")
 st.write(df)
 
