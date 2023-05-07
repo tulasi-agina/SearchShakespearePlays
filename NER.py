@@ -4,7 +4,7 @@ import streamlit as st
 import spacy_streamlit
 import spacy
 
-nlp = spacy.lead('en')
+nlp = spacy.load('en')
 
 def main():
 	"""A Simple NLP app with Spacy-Streamlit"""
