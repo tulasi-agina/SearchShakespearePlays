@@ -3,8 +3,6 @@
 import spacy
 import spacy_streamlit
 
-python -m spacy download en_core_web_sm
-
 models = ["en_core_web_sm", "en_core_web_md"]
 
 default_text = "Sundar Pichai is the CEO of Google."
