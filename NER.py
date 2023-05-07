@@ -10,17 +10,9 @@ models = ["en_core_web_sm", "en_core_web_md"]
 
 st.title("Named Entity Recognition")
 
-menu = ["Home","NER"]
-choice = st.sidebar.selectbox("Menu",menu)
+import spacy
+from spacy_streamlit import visualize_parser
 
-if choice == "Home":
-	st.subheader("Tokenization")
-	raw_text = st.text_area("Your Text","Enter Text Here")
-	if st.button("Tokenize"):
-		spacy_streamlit.visualize(models, raw_text)
-
-	elif choice == "NER":
-		st.subheader("Named Entity Recognition")
-		raw_text = st.text_area("Your Text","Enter Text Here")
-		docx = nlp(raw_text)
-		spacy_streamlit.visualize_ner(raw_text,labels=nlp.get_pipe('ner').labels)
+nlp = spacy.load("en_core_web_sm")
+doc = nlp("This is a text")
+visualize_parser(doc)
